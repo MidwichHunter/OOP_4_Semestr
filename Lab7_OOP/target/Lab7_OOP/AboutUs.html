@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Вливайтесь в Ряды чистого неба</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="img">
+</head>
+<body>
+<style>
+
+
+    .accordion-button{
+        background-color: #0d6efd;
+        font-weight: bold;
+    }
+    .accordion-body{
+        font-weight: bold;
+        color: black;
+    }
+    .accordion-item{
+        background-color: #5c636a;
+
+    }
+    .accordion {
+        opacity: 70%;
+    }
+    .background-image {
+        background-image: url('img/Background1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Добавляем высоту для растяжения на всю длину экрана */
+    }
+
+</style>
+
+<div class="container-fluid p-0 background-image">
+    <div class="row">
+        <div class="col-12 text-center text-white">
+            <h1>Немного</h1>
+            <h1>о нас</h1>
+            <div class="btn-group btn-group-block" role="group" aria-label="Basic example">
+                <form method="GET" action="Main">
+                    <button type="submit" class="btn btn-primary btn-block">Главная</button>
+                </form>
+                <form method="GET" action="AboutUs">
+                    <button type="submit" class="btn btn-primary btn-block">О нас</button>
+                </form>
+                <form method="GET" action="Zone_Delivery">
+                    <button type="submit" class="btn btn-primary btn-block">Расписание</button>
+                </form>
+                <form method="GET" action="Contacts">
+                    <button type="submit" class="btn btn-primary btn-block">Контакты</button>
+                </form>
+                <form method="GET" action="FeedBack">
+                    <button type="submit" class="btn btn-primary btn-block">Обратная связь</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="accordion" id="accordionExample" style="margin-top: 75px">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: black">
+                    Кто мы ?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Чистое небо</strong> это одна из ключевых группировок в Зоне, объединяющая ученых, сталкеров и идеалистов, которые стремятся понять аномальный мир и раскрыть его тайны. В отличие от многих других фракций, «Чистое Небо» не ищет наживы или власти — их цель исследование, защита и, возможно, спасение Зоны.
+                </div>
+                <div class="accordion-body">
+                    Группировка была основана профессором Германом, ученым, который верит, что Зону можно изучить и даже обезвредить. База «Чистого Неба» расположена на болотах, недалеко от Кордона, где они ведут наблюдения за аномалиями и мутантами, пытаясь найти закономерности в их поведении.
+                </div>
+                <div class="accordion-body">
+                    Члены группировки — это исследователи, врачи и бывшие военные, которые отказались от насилия в пользу науки. Они помогают новичкам в Зоне, лечат пострадавших и делятся знаниями, но при этом жестко пресекают любые попытки мародерства или неоправданной жестокости.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: black">
+                    Про что мы ?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Мы уже долгое время исследуем аномалии, анализируем выбросы и помогаем сталкерам выживать в этом опасном мире. За годы существования группировки нам удалось собрать уникальные данные о Зоне, провести ряд экспедиций и спасти десятки людей, заблудившихся в болотах и пустошах.
+                </div>
+                <div class="accordion-body">
+                    <strong>«Чистое Небо» – это не просто фракция. Это движение.</strong> Оно родилось не вчера – оно стало закономерным итогом многолетних трудов ученых, врачей и сталкеров, которые верят, что Зону можно понять, а не просто бояться. Мы изо дня в день изучаем её тайны, совершенствуем оборудование и помогаем тем, кто стремится к знаниям, а не к наживе.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: black">
+                    Планы на будущее
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Мы добьёмся высот, к которым стремимся. Нам нужно лишь немного времени...
+
+                    Мы — не наёмники, не мародёры и не фанатики. Мы — исследователи. Наши лаборатории в болотах, наши отряды в руинах — всё это ради одной цели: понять Зону.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Вливайтесь в Ряды чистого неба</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="img">
+</head>
+<body>
+<style>
+  .background-image {
+    background-image: url('img/Background1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Добавляем высоту для растяжения на всю длину экрана */
+  }
+</style>
+
+<div class="container-fluid p-0 background-image">
+  <div class="row">
+    <div class="col-12 text-center text-white">
+      <h1>Обратная</h1>
+      <h1>связь</h1>
+      <div class="btn-group btn-group-block" role="group" aria-label="Basic example">
+        <form method="GET" action="Main">
+          <button type="submit" class="btn btn-primary btn-block">Главная</button>
+        </form>
+        <form method="GET" action="AboutUs">
+          <button type="submit" class="btn btn-primary btn-block">О нас</button>
+        </form>
+        <form method="GET" action="Zone_Delivery">
+          <button type="submit" class="btn btn-primary btn-block">Расписание</button>
+        </form>
+        <form method="GET" action="Contacts">
+          <button type="submit" class="btn btn-primary btn-block">Контакты</button>
+        </form>
+        <form method="GET" action="FeedBack">
+          <button type="submit" class="btn btn-primary btn-block">Обратная связь</button>
+        </form>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label" style="width: 20rem; margin-left: 300px; color: white">Email адрес</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" style="width: 20rem; margin-left:230px; background-color: #9eeaf9;">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label" style="width: 60rem; margin-left: 300px; color: white">Напишите отзыв</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width: 60rem; margin: auto; background-color: #9eeaf9;  font-size: 40px;"></textarea>
+    </div>
+    <form method="GET" action="Main">
+      <button type="submit" class="btn btn-outline-success" style="width: 20rem; margin-left: 550px;" href="">Success</button>
+    </form>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Вливайтесь в Ряды чистого неба</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="img">
+</head>
+<body>
+<style>
+
+    .background-image {
+        background-image: url('img/Background1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Добавляем высоту для растяжения на всю длину экрана */
+    }
+    .carousel-item img {
+        max-width: 30%; /* Устанавливаем максимальную ширину для изображения */
+        display: block; /* Делаем изображение блочным элементом */
+        margin: 0 auto; /* Устанавливаем автоматичесные отступы по горизонтали для центрирования */
+        margin-top: 30px;
+    }
+</style>
+
+<div class="container-fluid p-0 background-image">
+    <div class="row">
+        <div class="col-12 text-center text-white">
+            <h1>Группировка</h1>
+            <h1>Чистое небо</h1>
+
+            <div class="btn-group btn-group-block" role="group" aria-label="Basic example">
+                <form method="GET" action="Main">
+                    <button type="submit" class="btn btn-primary btn-block">Главная</button>
+                </form>
+                <form method="GET" action="AboutUs">
+                    <button type="submit" class="btn btn-primary btn-block">О нас</button>
+                </form>
+                <form method="GET" action="Zone_Delivery">
+                    <button type="submit" class="btn btn-primary btn-block">Расписание</button>
+                </form>
+                <form method="GET" action="Contacts">
+                    <button type="submit" class="btn btn-primary btn-block">Контакты</button>
+                </form>
+                <form method="GET" action="FeedBack">
+                    <button type="submit" class="btn btn-primary btn-block">Обратная связь</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Clear-Sky_Fighters.jpg" class="d-block" style="height:400px">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Clear-Sky_Fighter.jpg" class="d-block" style="height:400px">
+            </div>
+            <div class="carousel-item">
+                <img src="img/FIGHTER3.jpg" class="d-block" style="height:400px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="text-center text-white">
+        <h2>Зацени какие комбезы!</h2>
+        <h2>Хочешь также ?</h2>
+        <h2>Ждём на болотах, обращаться к Споре</h2>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

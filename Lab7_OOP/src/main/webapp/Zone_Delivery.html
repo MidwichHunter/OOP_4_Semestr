@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Вливайтесь в Ряды чистого неба</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="img">
+</head>
+<body>
+<style>
+  .background-image {
+    background-image: url('img/Background1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Добавляем высоту для растяжения на всю длину экрана */
+  }
+</style>
+
+<div class="container-fluid p-0 background-image">
+  <div class="row">
+    <div class="col-12 text-center text-white">
+      <h1>Расписание</h1>
+      <h1>Ближайших крупных операций</h1>
+      <div class="btn-group btn-group-block" role="group" aria-label="Basic example">
+        <form method="GET" action="Main">
+          <button type="submit" class="btn btn-primary btn-block">Главная</button>
+        </form>
+        <form method="GET" action="AboutUs">
+          <button type="submit" class="btn btn-primary btn-block">О нас</button>
+        </form>
+        <form method="GET" action="Zone_Delivery">
+          <button type="submit" class="btn btn-primary btn-block">Расписание</button>
+        </form>
+        <form method="GET" action="Contacts">
+          <button type="submit" class="btn btn-primary btn-block">Контакты</button>
+        </form>
+        <form method="GET" action="FeedBack">
+          <button type="submit" class="btn btn-primary btn-block">Обратная связь</button>
+        </form>
+      </div>
+    </div>
+    <table class="table" style="width: 60rem; margin: auto; margin-top: 75px;  background-color: darkblue; border-color: #1a1d20; border:2px; opacity: 90%">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Рейд</th>
+        <th scope="col">Локация</th>
+        <th scope="col">Дата</th>
+        <th scope="col">Время начала</th>
+      </tr>
+      </thead>
+      <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>Последний рассвет</td>
+        <td>Янов</td>
+        <td>23.04.2010</td>
+        <td>17:00</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Полнолуние</td>
+        <td>Тёмная лощина</td>
+        <td>27.04.2010</td>
+        <td>16:50</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Закат</td>
+        <td>Болота</td>
+        <td>04.05.2010</td>
+        <td>15:00</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Фарфатер</td>
+        <td>Припять</td>
+        <td>10.05.2010</td>
+        <td>14:20</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Перехват</td>
+        <td>Затоне</td>
+        <td>16.05.2010</td>
+        <td>17:20</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>Воскрешение</td>
+        <td>Лиманске</td>
+        <td>21.05.2010</td>
+        <td>18:00</td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>Последний день</td>
+        <td>Генераторах</td>
+        <td>01.06.2010</td>
+        <td>14:20</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

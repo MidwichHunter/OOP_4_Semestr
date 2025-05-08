@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="img">
+</head>
+<body style="background-image: url('img/Background1.jpg')">
+<form action="GroupServlet" method="get">
+    <div style="margin-left: 44%;margin-top: 20px;">
+        <button type="submit" value="Submit" class="btn btn-primary" style="background: #0a53be ; border: 2px solid #1a1d20;">Посмотреть таблицы</button>
+    </div>
+</form>
+<div>
+    <h4  class="input-group mb-3" style="color: #0a58ca ;width: 20rem; margin: auto; margin-top: 150px; ">Заполните анкету Охотника</h4>
+    <form action="GroupServlet" method="post">
+        <div class="input-group mb-3" style="width: 20rem; margin: auto; margin-top: 20px;">
+            <span class="input-group-text" id="inputGroup-sizing-default1"  style="background-color: #9eeaf9; border: 2px solid #1a1d20;width: 100px; text-align: center;">Имя</span>
+            <input type="text" id="name" name="name" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style=" background-color: #9eeaf9; border: 2px solid #1a1d20">
+        </div>
+        <div class="input-group mb-3" style="width: 20rem; margin: auto; margin-top: 20px;">
+            <span class="input-group-text" id="inputGroup-sizing-default2"  style="background-color: #9eeaf9; border: 2px solid #1a1d20;width: 100px; text-align: center;">Ранг</span>
+            <input type="text" id="rang" name="rang" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style=" background-color: #9eeaf9; border: 2px solid #1a1d20">
+        </div>
+        <div class="input-group mb-3" style="width: 20rem; margin: auto; margin-top: 20px;">
+            <span class="input-group-text" id="inputGroup-sizing-default3"  style="background-color: #9eeaf9; border: 2px solid #1a1d20;width: 100px; text-align: center;">Возраст</span>
+            <input type="number" id="age" name="age" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style=" background-color: #9eeaf9; border: 2px solid #1a1d20">
+        </div>
+        <div class="input-group mb-3" style="width: 20rem; margin: auto; margin-top: 20px;">
+            <span class="input-group-text" id="inputGroup-sizing-default4"  style="background-color: #9eeaf9; border: 2px solid #1a1d20;width: 115px; text-align: center;">Группировка</span>
+            <input  type="text" id="group" name="group" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style=" background-color: #9eeaf9; border: 2px solid #1a1d20">
+        </div>
+        <div class="input-group mb-3" style="width: 20rem; margin: auto; margin-top: 20px;">
+            <span class="input-group-text" id="inputGroup-sizing-default5"  style="background-color: #9eeaf9; border: 2px solid #1a1d20;width: 100px; text-align: center;">Номер Пда</span>
+            <input  type="text" id="pda_number" name="pda_number" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style=" background-color: #9eeaf9; border: 2px solid #1a1d20">
+        </div>
+        <div style="margin-left: 47%;margin-top: 20px;">
+            <form action="GroupServlet" method="get">
+                <button type="submit" value="Submit" class="btn btn-primary" style="background-color: #0a58ca; border: 2px solid #1a1d20;">Отправить</button>
+            </form>
+        </div>
+    </form>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
